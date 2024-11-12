@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: .5fr 1fr;
+            grid-template-rows: repeat(3,1fr) 200px auto;
+            gap: 10px;
+            padding: 0px;
+            margin: 0px;
+        }
+        .pogo{
+            background-color: aqua;
+            padding: 20px;
+            text-align: center;
+            grid-column: span 2;
+        }
+       .logo{
+            background-color: aqua;
+            display: inline-flex;
+            flex-direction: row;
+            gap:10px;
+            text-align: center;
+            align-items: center;
+            padding-left: 40%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="pogo">LOGO</div>
+        <div class="pogo">Navigation</div>
+        <div class="pogo">Header/Banner</div>
+        <div class="logo">Side bar</div>
+        <div class="logo">Body Area</div>
+        <footer class="pogo">Footer</footer>
+    </div>
+</body>
+</html>
