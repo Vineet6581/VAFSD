@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration Form</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Course Registration Form</h2>
+        <form>
+            <fieldset>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="contact">Contact No.</label>
+                    <input type="text" id="contact" placeholder="Enter your contact number" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email ID</label>
+                    <input type="text" id="email" placeholder="Enter your email ID" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" required />
+                </div>
+
+                <div class="form-group gender-options">
+                    <label>Gender</label>
+                    <input type="radio" name="gender" value="male" required /> Male
+                    <input type="radio" name="gender" value="female" required /> Female
+                </div>
+
+                <div class="form-group">
+                    <label for="course">Your Course</label>
+                    <select id="course" required>
+                        <option value="" disabled selected>Select a course</option>
+                        <option value="web-development">Web Development</option>
+                        <option value="coa">COA</option>
+                        <option value="dsa">DSA</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="duration">Course Duration (in months)</label>
+                    <input type="number" id="duration" placeholder="Enter the course duration" required />
+                </div>
+
+                <div class="form-group optional-courses">
+                    <label>Optional Courses</label><br>
+                    <input type="checkbox" value="coa-optional" /> COA
+                    <input type="checkbox" value="de-optional" /> D.E.
+                </div>
+
+                <button type="submit" class="submit-btn">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+</html>

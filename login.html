@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFunction() {
+            var passwordField = document.getElementById("password");
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+            } else {
+                passwordField.type = "password";
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="./webpage.html">
+        LOGIN ID
+        <input type="text" id="text" name="text" placeholder="enter your login id" required/>
+        <br>
+        PASSWORD
+        <input type="password" id="password" name="password" placeholder="enter your password" required/><br>
+        <input type="checkbox" onclick="myFunction()">Show Password
+        <label>
+            <button type="submit" id="submit">SUBMIT</button>
+            <button type="reset" id="reset">RESET</button>
+        </label>
+    </form>
+</body>
+</html>

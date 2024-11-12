@@ -1,38 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Grid</title>
-  <style>
-    .grid-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 100px 200px 200px;
-      gap: 30px;
-    }
-
-    .first {
-      grid-column: span 2;
-    }
-
-    .card {
-      background-color: blue;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            width: 1200px;
+            height: 900px;
+            background-color: aqua;
+            margin: 0 auto;
+            padding: 0;
+        }
+        #logo{
+            width: 1200px;
+            height: 100px;
+            background-color: #999;
+            text-align: center;
+            align-content:center ;
+        }
+        header{
+            width: 1200px;
+            height: 200px;
+            text-align: center;
+            align-content: center ;
+            margin: 5px 0;
+            background-color: #999;
+            
+        }
+        article{
+                width: 1200px;
+                height: 120px;
+                text-align: center;
+                align-content: center ;
+                background-color: #999;
+        }
+        #container{
+            width: 1200px;
+            height: 300px;
+            margin: 5px 0;
+            background-color: blue;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .box{
+            width: 380px;
+            height:300px;
+            background-color: #999;
+            text-align: center;
+            align-content: center;
+        }
+        footer{
+            width: 1200px;
+            height: 190px;
+            background-color: #999;
+            text-align: center;
+            align-content: center;
+        }
+        @media  (min-width:319px) and (max-width:480px){
+            body{
+              background-color:lightsalmon;
+            } 
+          }
+        
+          @media (min-width:481px) and (max-width:1200px){
+            body{
+              background-color: powderblue;
+            }
+          }
+         @media (min-width:1201px) and (max-width:1600px){
+          body{
+            background-color: limegreen;
+          }
+         }
+         @media (min-width:1601px){
+        body{
+          background-color: seagreen;
+        }
+         }
+    </style>
 </head>
-
 <body>
-  <h1>CSS Grid</h1>
-  <div class="grid-container">
-    <div class="first card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-  </div>
-
+    <main>
+       <div id="logo"><h2>Logo</h2></div>
+       <header><h2>Header</h2></header>
+       <article><h2>Input Text Area</h2></article>
+       <div id="container">
+        <div class="box"><h2>box1</h2></div>
+        <div class="box"><h2>box2</h2></div>
+        <div class="box"><h2>box3</h2></div>
+       </div>
+       <footer><h2>Footer</h2></footer>
+    </main>
 </body>
-
 </html>
