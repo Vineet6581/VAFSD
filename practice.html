@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        background-color: #999;
+        display: grid;
+        grid-template-columns: auto 400px minmax(200px, 500px);
+        grid-template-rows: 1fr 1fr 2fr;
+        grid-auto-rows: 50px;
+    }
+    .box{
+        background-color: blueviolet;
+        border: 5px solid goldenrod;
+        text-align: center; 
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="box">width expands to fill space</div>
+        <div class="box">400px wide</div>
+        <div class="box">min 200px max 500px wide</div>
+        <div class="box">width expands to fill space</div>
+        <div class="box">400px wide</div>
+        <div class="box">min 200px max 500px wide</div>
+        <div class="box">width expands to fill space</div>
+        <div class="box">400px wide</div>
+        <div class="box">min 200px max 500px wide</div>
+        <div class="box">50px high</div>
+    </div>
+</body>
+</html>
